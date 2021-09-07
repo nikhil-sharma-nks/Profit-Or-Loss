@@ -5,10 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profit Or Loss</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Profit Or Loss
+
+    <div class="container">
+        <div class="page-heading">Profit Or Loss</div>
+        <div class="description">
+          Enter Sides Of Triangle, We'll Use Heron's Formula To calculate The Area
+        </div>
+  
+        <div class="input-container">
+  
+          <label for="initial-price " >Initial Price : 
+          <input type="number" class="input initial-price" placeholder="Enter Initial Price Of The Stock" required/> </label>
+  
+  
+          <label for="quantity-stock " >Quantity Of Stocks : 
+          <input type="number" class="input quantity-stock" placeholder="Enter Quantity Of Stocks" required/> </label>
+  
+  
+          <label for="current-price " >Current Price : 
+          <input type="number" class="input current-price" placeholder="Enter Current Price Of The Stock" required/> </label>
+
+  
+          </div>
+          <button class="btn-submit" id="submit-angles-btn">Submit </button>
+          <div class="result"></div>
+          <div class="error"></div>
+        </div>
+        </div>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p class="footer-text">Made with ❤ by Nikhil <br /></p>
+
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-3x"></i
+          ></a>
+          <a href="https://github.com/nikhil-sharma-nks" target="_blank"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+          <a href="https://twitter.com/wannabe_nikhil" target="_blank"
+            ><i class="fab fa-twitter fa-3x"></i
+          ></a>
+          <a href="https://www.facebook.com/nikhilshawarma/" target="_blank">
+            <i class="fab fa-facebook fa-3x"></i
+          ></a>
+          <a href="https://www.instagram.com/nikhil.shawarma/" target="_blank"
+            ><i class="fab fa-instagram fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="app.js"></script>
 </html>
