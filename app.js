@@ -24,13 +24,17 @@ submitBtn.addEventListener("click", function handleSubmitClick() {
       const percentage = (profit / initialAmount) * 100;
       resultMsg.style.display = "block";
       resultMsg.style.color = "green";
-      resultMsg.innerText = `This Stock Is In PROFIT of ${profit}, ${percentage}% ⬆`;
+      resultMsg.innerText = `This Stock Is In PROFIT of ${profit}, ${percentage.toFixed(
+        2
+      )}% ⬆`;
     } else {
       const loss = initialAmount - currentAmount;
       const percentage = (loss / initialAmount) * 100;
       resultMsg.style.display = "block";
       resultMsg.style.color = "red";
-      resultMsg.innerText = `This Stock Is In LOSS of ${loss}, ${percentage}% ⬇`;
+      resultMsg.innerText = `This Stock Is In LOSS of ${loss}, ${percentage.toFixed(
+        2
+      )}% ⬇`;
     }
   } else {
     errorMsg.style.display = "block";
