@@ -30,7 +30,7 @@ submitBtn.addEventListener("click", function handleSubmitClick() {
     } else if (currentAmount == initialAmount) {
       resultMsg.style.display = "block";
       resultMsg.style.color = "black";
-      resultMsg.innerText = "This Stock Is Neither In Profit Nor In Loss";
+      resultMsg.innerText = "This Stock Is Neither In Profit Nor In Loss ";
     } else {
       const loss = initialAmount - currentAmount;
       const percentage = (loss / initialAmount) * 100;
