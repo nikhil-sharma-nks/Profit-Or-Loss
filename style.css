@@ -108,3 +108,65 @@ body {
   background-color: var(--primary-color);
   cursor: pointer;
 }
+
+@media (max-width: 540px) {
+  .container {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .container .page-heading {
+    font-size: 1.4rem;
+  }
+
+  .container .description {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .input-container .input {
+    width: 80%;
+  }
+
+  .btn-submit {
+    padding: 15px 25px;
+    margin-bottom: 20px;
+  }
+
+  .result {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .error {
+    font-size: 1.2rem;
+  }
+
+  .main-footer {
+    color: rgb(0, 0, 0);
+    margin-top: 5rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-text {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .social .fab {
+    border-radius: 50%;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .social .fab:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+}
